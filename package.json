@@ -1,0 +1,36 @@
+{
+  "name": "epic-ehr-browser-automation",
+  "version": "1.0.0",
+  "description": "Browser automation scaffolding for Epic EHR — API alternative for MyChart, scheduling, care gaps, and clinical workflows",
+  "keywords": [
+    "epic-ehr",
+    "epic-mychart",
+    "ehr-automation",
+    "healthcare-automation",
+    "browser-automation",
+    "puppeteer",
+    "playwright",
+    "web-scraping",
+    "ai-agents",
+    "hipaa",
+    "clinical-workflows",
+    "anchorbrowser"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "puppeteer": "^22.0.0",
+    "dotenv": "^16.4.5",
+    "otplib": "^12.0.1"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^22.0.0"
+  },
+  "scripts": {
+    "example:login": "node examples/basic-login.js",
+    "example:schedule": "node examples/schedule-patient.js",
+    "example:care-gaps": "node examples/care-gap-report.js",
+    "example:anchor": "node examples/anchor-cloud.js"
+  }
+}
