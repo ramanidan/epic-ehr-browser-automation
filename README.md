@@ -253,6 +253,38 @@ await withAnchorBrowser(async (page) => {
 
 ---
 
+## Known Selectors Reference
+
+> These CSS selectors were observed in Epic EHR web interfaces. Enterprise applications update their UIs — verify against your specific instance and submit PRs when selectors break.
+
+| Element | Selector | Notes |
+|---------|----------|-------|
+| Login: username | `#j_username` | Login form |
+| Login: password | `#j_password` | Login form |
+| Login: submit | `#loginButton` | Login form |
+| Login: mfa code | `#duo_form input[name="passcode"]` | Login form |
+| schedule appointment: container | `#scheduleAppointment` | |
+| schedule appointment: slot | `.appt-slot` | |
+| schedule appointment: confirm | `#confirmApptBtn` | |
+| schedule appointment: provider search | `#providerSearch` | |
+| get patient info: search input | `#patientSearch input` | |
+| get patient info: result row | `.patient-result-row` | |
+| get patient info: demographics | `#demographicsTab` | |
+| fill clinical note: note editor | `#noteText` | |
+| fill clinical note: smartphrase | `.smartphrase-popup` | |
+| fill clinical note: sign btn | `#signNote` | |
+| export care gaps: reports menu | `#reportsMenu` | |
+| export care gaps: care gap report | `.care-gap-report` | |
+| export care gaps: export btn | `#exportReport` | |
+| mychart messaging: inbox link | `a[href*="messaging"]` | |
+| mychart messaging: compose btn | `#composeMessage` | |
+| mychart messaging: recipient | `#messageTo` | |
+| mychart messaging: message body | `#messageBody` | |
+
+> ⚠️ Selectors are best-effort. Run `node src/utils.js --verify-selectors` to test against your instance.
+
+---
+
 ## More Browser Automation Projects
 
 This is part of the **[Browser Automation Hub](https://github.com/Browser-Automation-Hub)** — a collection of open-source browser automation scaffolds for systems with poor or no API support:
